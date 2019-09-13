@@ -2,6 +2,7 @@ function produceDrivingRange(blockRange) {
   return function (block1, block2) {
     let range = parseInt(block2) - parseInt(block1)
     if (range < blockRange) {
+      let value= blockRange - rang
       return `within range by ${blockRange - range}`
     }
     else {
